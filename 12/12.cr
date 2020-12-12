@@ -21,7 +21,6 @@ puts "Part1: #{x.abs + y.abs}"
 
 ship_x, ship_y = 0, 0
 waypoint_x, waypoint_y = 10, -1
-directions = [{1, 0}, {0, 1}, {-1, 0}, {0, -1}]
 
 instructions.each do |action, value|
   case action
