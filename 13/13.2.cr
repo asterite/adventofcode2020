@@ -7,10 +7,10 @@ restrictions = File
   .to_a
   .sort_by { |(bus, minute)| -bus }
 
+value = 0_i64 - restrictions[0][1]
 increment = restrictions[0][0]
 target_index = 1
 bus, minute = restrictions[target_index]
-value = 0_i64 - restrictions[0][1]
 while true
   mod = value % bus
   rest = mod == 0 ? 0 : (bus - mod)
